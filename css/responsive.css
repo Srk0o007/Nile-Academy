@@ -1,0 +1,687 @@
+@media only screen and (max-width: 992px) 
+{
+    .top-element{
+        margin-top: 15px;
+    }
+    .Learn-more{
+        padding-top: 1px;
+    }
+    .about-us{
+        padding-top: 10px;
+        padding-bottom: 45px;
+    }
+    .school-blog{
+        padding-top: 10px;
+        padding-bottom: 45px;
+    }
+    .heading{
+        margin-left: -27px;
+    }
+    .heading2{
+        margin-left:-55px;
+    }
+    .blog{
+        margin-top: 34px;
+    }
+    .blog-btn{
+        margin-left: -35px;
+    }
+    .event{
+        margin-left: 90px;
+        width: 207px;
+        margin-top: -4px;
+    }
+    .event-div{
+        margin-bottom: -115px
+    }
+    .navigation-links{
+        color: #000 !important;
+    }
+    .bottom-border {
+        top: -116px;
+    }
+    .events{
+        margin-left: 95px;
+        width: 207px;
+        margin-top: -4px;
+    }
+    .clock {
+        margin-left: -207px;
+    }
+    .bottom-border2 {
+        top: -88px;
+    }
+    .clocks {
+        margin-left: -207px;
+    }
+    .slide-1 h1 {
+        z-index: 1;
+        margin-left: 60px;
+        margin-top: -205px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .slide-1 h2 {
+        z-index: 1;
+        margin-left: 60px;
+        font-size: 32px;
+}
+.slide-btn{
+    padding: 8px;
+    position: relative;
+    top: 13px;
+    font-weight: 500;
+    font-size: 10px;
+}
+.slide-fix{
+    margin-top: 0px;
+    height: 340px;
+
+}
+.slide1-img{
+    height: 340px;
+}
+.slide-2 h3 {
+    margin-top: -195px;
+    font-size: 24px;
+}
+.slide-2 h4 {
+    font-size: 15px;
+}
+.navigation{
+    padding-top: 0px;
+    margin-left: 85px;
+}
+.support{
+    display: none;
+}
+.container-fix{
+ padding-bottom: 15px;
+ padding-top: 15px;
+}
+.menu-icon{
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.text-color{
+    color: #fff;
+    margin-top: 17px;
+}
+
+/*----------about-us--------------*/
+.about h1 {
+    z-index: 1;
+    margin-left: 42px;
+    margin-top: -188px;
+}
+.about h2 {
+    z-index: 1;
+    margin-left: 34px;
+    padding-bottom: 101px;
+}
+.about-link h6{
+    margin-left: -20px;
+    margin-top: 10px;
+}
+.history{
+    padding-bottom: 0px;
+}
+.why-us{
+    padding-top: 25px;
+    margin-left: -20px;
+}
+.mission{
+    height: 513.8px;
+}
+.mission p{
+    text-align: justify;
+}
+.university-icon{
+    padding-top: 45px;
+}
+.hero-img {
+    height: 350px;
+    width: 345px;
+    margin-left: 0px;
+    margin-top: -60px;
+}
+.hero-img2 {
+    display: none;
+}
+.list-elements{
+    margin-left: -108px;
+    margin-top: 30px;
+}
+
+.hero-img3 {
+    display: none;
+}
+.elem{
+    left: 0px;
+    font-size: 8px;
+    margin-left: 110px;
+    top: 29px;
+}
+.phone-heading {
+     margin-left: 0px;
+     margin-top: 0px;
+}
+.contact h1 {
+    margin-top: -226px;
+    text-align: center;
+    font-size: 40px;
+}
+.phone i {
+    margin-left: 0px;
+  
+}
+.timing {
+    margin-left: 0px;
+}
+.phone-no {
+    margin-left: 0px;
+}
+.email {
+     margin-left: 0px;
+}
+.location-heading {
+    margin-top: 10px;
+
+}
+.marker i {
+    margin-left: 5px;
+}
+.form-element {
+    width: 375px;
+    margin-left: 0px;
+
+}
+/*local-student*/
+.application-process{
+    margin-top:75px
+}
+.school-tour{
+    margin-left: 60px;
+}
+.app-forms{
+    margin-left: 51px;
+}
+.application-process p{
+    width: 256px;
+    text-align: justify;
+}
+.app-para{
+    margin-left: 51px;
+}
+.report-sm{
+    margin-top: 195px;
+
+
+}
+.report-sm p{
+  margin-left: 51px;
+  width: 255px;
+
+}
+.test{
+    margin-top: 70px;
+    margin-left: 5px;
+}
+.test p{
+    width: 255px;
+    margin-left: 51px;
+}
+.interview{
+    margin-top: 70px;
+    margin-left: 5px;
+}
+.interview p {
+    width: 255px;
+    margin-left: 51px;
+}
+.acceptance{
+    margin-top: 70px;
+    margin-left: 5px;
+}
+.acceptance p{
+    width: 255px;
+    margin-left: 51px;
+}
+.application-form{
+    margin-left: 68px;
+    width: 255px;
+}
+
+.local h2{
+    font-size: 36px;
+    margin-left: 45px;
+    top: -90px;
+}
+.contact-img{
+    padding: 30px;
+}
+.kinder-program{
+    margin-top: -2310px;
+    width: 330px;
+    margin-left: 22px;
+
+}
+.heading-sm{
+    margin-left: 20px;
+}
+.contact-info{
+    margin-top: 1920px;
+    padding-bottom: 36px;
+    margin-left: 26px;
+    width: 330px;
+}
+.kinder-sm{
+    margin-top: -1820px;
+    width: 340px;
+}
+.kinder-program p {
+    width: 305px;
+    font-weight: 600;
+}
+.academic-program p {
+    width: 255px;
+}
+.academic-program {
+    margin-top: -1340px;
+    width: 330px;
+}
+.academic-bg{
+    padding-bottom: 161px;
+}
+.grade-program {
+        margin-top: -2085px;
+        width: 330px;
+        margin-left: 22px;
+}
+.grade-sm{
+        margin-top: -968px;
+        width: 340px;
+        margin-left: 42px;
+}
+.grade-contact{
+  
+        margin-top: 1700px;
+}
+.university-sm{
+    padding: 0 0 15px 0;
+}
+.university-para{
+    width: 355px;
+}
+.university p {
+    width: 350px;
+}
+.support-sm{
+    margin-top: 110px;
+}
+.diploma-heading {
+    margin-top: -90px;
+    margin-left: -104px;
+}
+.diploma-para{
+    width: 355px;
+    margin-left: 0px;
+}
+.diploma-p{
+    margin-left: -90px;
+}
+.icon{
+    margin-left: -335px;
+}
+.credit p{
+    width: 355px;
+    margin-left: 85px;
+}
+.credit-sm p{
+    width: 355px;
+    margin-left: 150px;
+}
+.bottom-line{
+    width: 355px !important;
+    margin-left: 79px;
+}
+.diploma{
+    width: 404px;
+    margin-top: -5px;
+
+}
+.diploma img{
+    padding: 35px;
+}
+.group {
+    width: 379px;
+}
+.night-school-img{
+    width: 355px;
+    margin-top: 0px;
+
+}
+.courses-sm {
+    padding: 29px 0px 15px 0px;
+}
+.img-border{
+    width: 355px;
+}
+.register-btn {
+    margin-top: 130px;
+}
+.schedule-sm {
+    padding: 160px 0 15px 0;
+}
+.courses-list2{
+    margin-top: 85px;
+    margin-left: 19px;
+}
+.collapse-div {
+    width: 344px;
+    margin-left: 18px;
+}
+.list-grade{
+    width: 350px;
+}
+.courses-info{
+        width: 364px !important;
+}
+.courses-info p {
+    width: 327px !important;
+}
+.support-heading{
+    margin-top: 0px ;
+    width: 355px;
+    margin-left: 0px;
+}
+.support-banner {
+    margin-left: 0px;
+    width: 320px;
+    height: 310px;
+}
+.support-para p{
+    width: 315px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.funding-heading{
+        margin-top: -2171px;
+        width: 330px;
+        margin-left: 0px;
+}
+.donate-heading{
+    margin-top: 905px;
+    margin-left: -22px;
+}
+.funding-border {
+    display: none;
+}
+.donate-border {
+    display: none;
+}
+.donate-process{
+    width: 306px;
+    margin-left: 0px;
+}
+.collapse-child1{
+    width: 302px;
+    margin-left: -7px;
+}
+.support-nile {
+    margin-top: 1600px;
+    margin-left: 15px;
+
+}
+.donate-mail{
+   display: none;
+}
+.video-img{
+    width: 330px;
+    margin-left: 13px;
+}
+.heading-bg{
+    margin-left: 13px;
+}
+.bottom-border{
+    width: 315px !important;
+    margin-left: 0px;
+
+}
+.academic-img{
+    padding: 0px 0 0 23px;
+}
+.academic-nile{
+    margin-left: 15px;
+}
+.academic-info {
+    margin-top: 161px;
+    padding-bottom: 36px;
+    width: 330px;
+}
+.academic-border{
+    width: 312px;
+}
+.child-element{
+    padding-right: 25px;
+
+}
+.academic-heading{
+    margin-top: 0px;
+    width: 326px;
+    margin-left: 0px;
+}
+.tutoring-heading{
+    margin-top: 10px;
+}
+.list-childs{
+    margin-top: 0px;
+}
+.request-heading{
+    margin-top: 25px;
+    width: 320px;
+    margin-left: 0px;
+}
+.transcript-child1{
+    padding-right: 25px;
+    width: 335px;
+}
+.btn-rounded{
+    border-radius: 40px;
+    margin-left: 0px;
+}
+.collapse-request {
+    width: 315px;
+    margin-left: 0px;
+}
+.mail-receipt{
+    padding: 0px 16px 0px 34px;
+}
+.calendar-footer{
+    margin-top: -90px;
+    margin-left: 0px;
+
+}
+.calender-data{
+    margin-top: 0px;
+}
+.camp-sm{
+    font-size: 18px;
+    width: 314px;
+    margin-left: -19px;
+}
+.camp-img{
+    display: none;
+}
+.camp-para {
+    width: 329px;
+    margin-left: 25px;
+}
+.camp-element {
+    width: 320px;
+    margin-left: 21px;
+}
+.col-width{
+    width: 320px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.camp-benefits {
+    padding: 0px 28px 0px 16px;
+}
+.day-trips{
+    margin-left: 30px;
+    margin-top: -55px;
+}
+.camp-para2 {
+    width: 320px;
+    margin-left: 36px;
+}
+.camp-element2 {
+    width: 310px;
+    margin-left: 45px;
+}
+.day-benefits {
+    padding: 0px 0px 0px 19px;
+    margin-left: 37px;
+}
+.camp-border {
+    width: 78%;
+    margin-left: -21px;
+    /* margin-top: 198px; */
+    position: relative;
+    top: -197px;
+}
+.form-heading{
+    width: 300px;
+}
+.camp-form {
+    width: 320px;
+}
+.footer-top{
+    padding-top: 0px;
+}
+.section-border{
+    width: 318px;
+
+}
+.contact-address{
+    width: 300px;
+}
+.news-grid {
+
+    margin-top: -40px;
+
+}
+.news-grid2{
+    margin-top: 135px;
+
+}
+.news-bttn {
+margin-bottom: 50px;
+}
+.search-bttn{
+    margin-left: 0px;
+    width: 335px;
+}
+.post{
+    width: 363px;
+    margin-left: -14px;
+    margin-bottom: 60px;
+}
+.post-info{
+    width: 354px !important;
+}
+.right-child-width{
+    width: 320px;
+}
+.athletics-left-child {
+    margin-top: 20px;
+    width: 315px;
+    margin-left: -20px;
+}
+.news-sm{
+    margin-left: -147px;
+    margin-top: 251px;
+}
+.athletic-border {
+    margin-top: -77px;
+    margin-left: 186px !important;
+    width: 130px !important;
+}
+.news-link {
+    width: 355px;
+    margin-left: 18px;
+}
+.update{
+    margin-left: -134px;
+    text-align: left;
+}
+.right-update {
+    width: 254px;
+    margin-left: -83px;
+    margin-top: 0px;
+    text-align: left;
+}
+.athelit-img {
+    margin-left: 0px;
+    height: 216px;
+    width: 350px;
+}
+.upcoming-events-sm{
+    margin-left: -124px;
+}
+.upcoming-border {
+    margin-top: -15px;
+    width: 112px !important;
+    margin-left: 208px !important;
+}
+.upcoming-event-border {
+    position: relative;
+    top: -120px;
+    float: left;
+    left: -145px;
+}
+.event-date h3{
+    margin-left: -166px;
+}
+.school-event{
+    margin-top: -10px;
+    text-align: left;
+}
+.event-clock {
+    left: 68px;
+}
+.event-location {
+    margin-left: -138px;
+    position: relative;
+    top: -111px;
+    left: 48px;
+}
+.view-all{
+    margin-left: -79px;
+    margin-top: -103px;
+}
+.form-section{
+    padding: 45px 20px 45px 20px;
+}
+.domestics h3{
+    font-size: 14px;
+
+}
+.fees-info{
+    margin-top: 574px;
+    padding-bottom: 36px;
+    width: 330px;
+}
+.fees-footer{
+    margin-top: 10px;
+}
+.add-para{
+    margin-top: 60px;
+    width: 315px;
+}
+.register-bttn {
+    margin-left: 50px;
+}
+}

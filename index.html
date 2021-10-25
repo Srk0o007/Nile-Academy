@@ -1,0 +1,949 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+
+
+
+    <!-- .carousel template.. -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<!-- favicon -->
+<link rel="icon" href="./img/Screenshot_2021-04-12_171811-removebg-preview.png" type="image/gif" sizes="30x30">
+    <!-- font-family -->
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <!-- ..template main css file. -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <link rel="stylesheet" href="./css/stylesheet.css">
+
+</head>
+
+<body class="font-sans md:font-sans">
+    <header class="text-gray-600 body-font top-header-bg">
+        <div class="container mx-auto flex flex-wrap  flex-col md:flex-row items-center container-fix">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="./index.html">
+                <img src="./img/logo-removebg-preview.png" class="logo">
+                 <!-- <span class="ml-3 text-xl text-white font-bold">SosudaNile Academy</span> -->
+             </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a   href="calender.html" class="mr-5 hover:text-red-800 text-white top-element">Calendar</a>
+                
+                <div class="dropdown inline-block">
+                    <button class="text-gray-700 font-semibold inline-flex items-center">
+                        <span
+                            class="mr-1 block md:inline-block px-4 py-3 no-underline mr-5 text-black hover:text-red-800  text-color font-normal">Portal</span>
+                        <!-- <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg> -->
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-gray-500 pt-1  ml-4 portal-dropdown">
+                        <li class=""><a
+                                class="  hover:text-red-700 py-4 px-6 font-normal block whitespace-no-wrap"
+                                href="./student-login.html">Student Login</a></li>
+                        <li class=""><a
+                                class=" hover:text-red-700 py-2 px-6 block font-normal whitespace-no-wrap"
+                                href="./parent-login.html">Parent Login</a>
+                        </li>
+                        <li class=""><a
+                                class=" hover:text-red-700 py-4 px-6 block font-normal whitespace-no-wrap"
+                                href="./teacher-login.html">Teacher Login</a></li>
+                    </ul>
+                </div>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-white-600 text-white social-icon hover:text-red-600">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-white-600 text-white social-icon hover:text-red-600">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-white-600 text-white social-icon hover:text-red-600">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-white-600 text-white social-icon hover:text-red-600">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+                <div class="ml-3 text-center bg-red-600 text-white text-white-800 font-bold p-10 px-5 support">Support
+                    SosudaNile</div>
+                <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+                    <span class="navicon bg-white flex items-center relative"></span>
+                </label>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <div class="flex justify-center items-center ">
+        <div class="w-full ">
+
+            <div class="swiper-container w-100 h-85">
+                <div class=" lg:w-full md:w-1/2 w-5/6">
+                    <div class="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
+                        <nav class="nav flex flex-wrap items-center justify-between px-4 navigation">
+                            <div class="flex flex-no-shrink items-center  text-black">
+                                <!-- <svg class="fill-current h-8 mr-2 w-8" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 716 895">
+                                <path d="M357.776 0l357.77 178.885v536.657l-357.77 178.89L0 715.542V178.885"></path>
+                                <path class="text-white fill-current" d="M357.776 804.982l268.32-134.16v-178.89l-89.44-44.72 89.44-44.72V223.606L357.776 89.442v626.1l-178.89-89.44V178.885l-89.443 44.721v447.216l268.333 134.16z"></path>
+                                <path d="M447.216 670.822l89.44-44.72v-89.45l-89.44-44.72v178.89zM447.216 402.492l89.44-44.721v-89.443l-89.44-44.722"></path>
+                              </svg> -->
+                                <!-- <span class="font-semibold text-xl tracking-tight">Luke Bennett</span> -->
+                            </div>
+
+                            <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+
+
+                            <ul class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+                                <li class="border-t md:border-none">
+                                    <a href="./index.html"
+                                        class="block md:inline-block px-4 py-3 no-underline mr-5 text-white hover:text-red-800  font-bold home-link navigation-links">Home</a>
+                                </li>
+
+                                <li class="border-t md:border-none">
+                                    <a href="./about-Us.html"
+                                        class="block md:inline-block px-4 py-3 no-underline mr-5 text-black hover:text-red-800  text-color font-semibold navigation-links">About
+                                        Us</a>
+                                </li>
+
+                                <li class="border-t md:border-none">
+                                    <div class="">
+
+                                        <div class="dropdown inline-block">
+                                            <button class="text-gray-700 font-semibold inline-flex items-center">
+                                                <span
+                                                    class="mr-1 block md:inline-block px-4 py-3 no-underline mr-5 text-black hover:text-red-800  text-color font-semibold navigation-links">Admission</span>
+                                                <!-- <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                </svg> -->
+                                            </button>
+                                            <ul class="dropdown-menu absolute hidden text-gray-500 pt-1 p-4 ">
+                                                <li class=""><a
+                                                        class="  hover:text-red-700 py-4 px-6 font-normal block whitespace-no-wrap"
+                                                        href="./local-student.html">Local Students</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-2 px-6 block font-normal whitespace-no-wrap"
+                                                        href="./international-students.html">Internatioanl Students</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block font-normal whitespace-no-wrap"
+                                                        href="./fees.html">Fees</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li class="border-t md:border-none">
+                                    <div class="">
+
+                                        <div class="dropdown inline-block">
+                                            <button class="text-gray-700 font-semibold inline-flex items-center">
+                                                <span
+                                                    class="mr-1 block md:inline-block px-4 py-3 no-underline mr-5 text-black hover:text-red-800  text-color font-semibold navigation-links">School</span>
+                                                <!-- <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                           viewBox="0 0 20 20">
+                                           <path
+                                               d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                       </svg> -->
+                                            </button>
+                                            <ul class="dropdown-menu absolute hidden text-gray-500 pt-1 p-4 ">
+                                                <li class=""><a
+                                                        class="  hover:text-red-700 py-4 px-6 block font-normal whitespace-no-wrap"
+                                                        href="./kindergarten.html">Kindergarten</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-2 px-6 block font-normal whitespace-no-wrap"
+                                                        href="./elementry.html">Elementary </a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block  font-normal whitespace-no-wrap"
+                                                        href="./high-school.html">High School</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block  font-normal whitespace-no-wrap"
+                                                        href="./night-school.html">Night School</a></li>
+                                                        </ul>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+
+                                <li class="border-t md:border-none">
+                                    <div class="">
+
+                                        <div class="dropdown inline-block">
+                                            <button class="text-gray-700 font-semibold inline-flex items-center">
+                                                <span
+                                                    class="mr-1 block md:inline-block px-4 py-3 no-underline mr-5 text-black hover:text-red-800  text-color font-semibold navigation-links">Student
+                                                    Life</span>
+                                                <!-- <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                               viewBox="0 0 20 20">
+                               <path
+                                   d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                           </svg> -->
+                                            </button>
+                                            <ul class="dropdown-menu absolute hidden text-gray-500 pt-1 p-4 ">
+                                                <li class=""><a
+                                                        class="  hover:text-red-700 py-4 px-6 block  font-normal whitespace-no-wrap"
+                                                        href="./news.html">News</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-2 px-6 block font-normal whitespace-no-wrap"
+                                                        href="./calender.html">Calender</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block  font-normal whitespace-no-wrap"
+                                                        href="./athletics.html">Athletics</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block  font-normal whitespace-no-wrap"
+                                                        href="./art.html">Art</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block font-normal whitespace-no-wrap"
+                                                        href="./academic-team.html">Academic Teams</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block  font-normal whitespace-no-wrap"
+                                                        href="./camp-&-trips.html">Camps & Trips</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block  font-normal whitespace-no-wrap"
+                                                        href="./clubs-&-tutoring.html">Clubs & Tutoring</a></li>
+                                                <li class=""><a
+                                                        class=" hover:text-red-700 py-4 px-6 block font-normal whitespace-no-wrap"
+                                                        href="./request-transcript.html">Request a Transcript</a></li>
+                                            </ul>
+                            
+                    </div>
+
+                </div>
+
+          </li>
+
+                <li class="border-t md:border-none">
+                    <a href="./support-us.html"
+                        class="block md:inline-block px-4 py-3 no-underline mr-5 text-black hover:text-red-800 text-color font-semibold navigation-links">Support
+                        Us</a>
+                </li>
+
+                <li class="border-t md:border-none">
+                    <a href="./contact.html"
+                        class="block md:inline-block px-4 py-3 no-underline mr-5 hover:text-white-800 text-color font-semibold navigation-links">Contact
+                        Us</a>
+                </li>
+
+                </ul>
+                </nav>
+
+                <!-- <button @click="mobileMenuOpen = !mobileMenuOpen" class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+                            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                          </button>
+                          <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
+                          :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"  @click.away="mobileMenuOpen = false"
+                          >
+                            <a href="#" class="block py-1 text-indigo-600 hover:underline">Home</a>
+                            <a href="#" class="block py-1 text-gray-600 hover:underline">About us</a>
+                            <a href="#" class="block py-1 text-gray-600 hover:underline">Services</a>
+                            <a href="#" class="block py-1 text-gray-600 hover:underline">Blog</a>
+                            <a href="#" class="block py-1 text-gray-600 hover:underline">Contact</a>
+                          </nav> -->
+
+
+
+                <!-- <nav class=" sm: ml-auto md:ml-auto flex flex-wrap items-center text-base justify-center capatalize">
+                            <p id="hamburgerbtn" class="md:hidden bg-purple-800"></p>
+                            <ul class=" hidden md:flex md:flex-row" id="mobileMenu">
+                                <li> <a href="#"
+                                    class="  mr-5 hover:text-white-800 text-white active subpixel-antialiased font-semibold">Home</a></li>
+                           
+                            <li><a href="#" class="mr-5 hover:text-white-800 text-color font-semibold">About Us</a></li>
+                           <li> <a href="#" class="mr-5 hover:text-white-800 text-color font-semibold">Admission</a></li>
+                           <li> <a href="#" class="mr-5 hover:text-white-800 text-color font-semibold">School</a></li>
+                           <li><a href="#" class="mr-5 hover:text-white-800 text-color font-semibold">Student Life</a></li> 
+                           <li><a href="#" class="mr-5 hover:text-white-800 text-color font-semibold">Support Us</a></li> 
+                            <li><a href="#" class="mr-5 hover:text-white-800 text-color font-semibold">Contact Us</a></li>
+                            </ul>
+                        </nav>  -->
+            </div>
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide-fix">
+                <img src="./img/DSC00534.JPG" class="slide1-img w-100">
+                <div class="slide-1">
+                    <h1 class="text-4xl text-white">SosudaNile Academy</h1>
+                    <h2 class="text-6xl font-bold text-white"> Elementary</h2>
+                    <a href="#" class="slide-btn">KNOW MORE</a>
+                </div>
+
+            </div>
+            <div class="swiper-slide slide-fix">
+                <img src="./img/Students-847x565.jpg" class="slide1-img">
+                <div class="slide-2">
+
+
+                    <h3 class="text-6xl text-white font-bold"> EARLY REGISTRATION</h3>
+                    <h4 class="text-4xl  text-white">for 2021-2022 school Year</h4>
+                    <a href="#" class="slide-btn2">KNOW MORE</a>
+                </div>
+            </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev navigation-btn"></div>
+        <div class="swiper-button-next navigation-btn"></div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination navigation-btn"></div>
+
+    </div>
+
+    </div>
+    </div>
+
+    <!-- <section class="text-gray-600 body-font bg-red-200">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-high text-gray-900">EARLY REGISTRATION
+                        <br class="hidden lg:inline-block">for 2021 2022
+                    </h1>
+                    <p class="mb-8 leading-relaxed">test.</p>
+
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                            <a class="mr-5 hover:text-red-800 text-white">Calendar</a>
+                            <a class="mr-5 hover:text-red-800 text-white">Portal</a>
+                            <a class="mr-5 hover:text-red-800">Third Link</a>
+                            <a class="mr-5 hover:text-red-800">Fourth Link</a>
+                            <a class="mr-5 hover:text-red-800">Fourth Link</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            </section> -->
+
+    <section class="text-gray-400 bg-gray-900 body-font intro">
+        <div class="container px-5 py-10 mx-auto">
+
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class=" h-70 overflow-hidden">
+                        <h1 class="bg-red-600 px-5 pt-5 text-white-800 font-bold text-xl text-white">Kindergarten</h1>
+                        <a href="#">
+                            <p class="bg-red-600 px-5 pb-5  text-white-800 text-white font-medium text-base">Learn More
+                            </p>
+                        </a>
+                        <img alt="content" class="object-cover object-center h-full w-full classroom-img"
+                            src="./img/download.jpg">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-white mt-5">Introduction</h2>
+                    <p class="text-base leading-relaxed mt-2"> SosudaNile Academy’s Kindergarten program is uniquely
+                        designed for the educational, emotional and social needs of four and five-year-old students.
+                    </p>
+                    <a href="#" class="text-red-600 inline-flex items-center mt-3 pt-14 Learn-more">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class=" h-70 overflow-hidden">
+                        <h1 class="bg-red-800 px-5 pt-5 text-white-800 font-bold text-xl text-white">Elementary</h1>
+                        <a href="#">
+                            <p class="bg-red-800 px-5 pb-5  text-white-800 text-white font-medium text-base">Learn More
+                            </p>
+                        </a>
+                        <img alt="content" class="object-cover object-center  w-full h-full classroom-img"
+                            src="./img/photo (24).JPG">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-white mt-5">Grades 1-8</h2>
+                    <p class="text-base leading-relaxed mt-2"> SosudaNile Academy’s Nile Academy’s Grade 1 to Grade 8
+                        Specialist educators teach our comprehensive curriculum in Language Arts, Mathematics, Science,
+                        French, Information Technology, for Grade 6 to 8 classes..
+                    </p>
+                    <a href="#" class="text-red-600 inline-flex items-center mt-3 pt-1">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                    <div class=" h-70 overflow-hidden">
+                        <h1 class="bg-red-900 px-5 pt-5 text-white-800 font-bold text-xl text-white">High School</h1>
+                        <a href="#">
+                            <p class="bg-red-900 px-5 pb-5  text-white-800 text-white font-medium text-base">Learn More
+                            </p>
+                        </a>
+                        <img alt="content" class="object-cover object-center h-full w-full classroom-img"
+                            src="./img/image-1.jpg">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-white mt-5">HIGH SCHOOL EDUCATION</h2>
+                    <p class="text-base leading-relaxed mt-2"> SosudaNile Academy’s Nile Academy believes the importance
+                        and value of completing secondary education. The concept of completing secondary education is
+                        essential.
+                    </p>
+                    <a href="#" class="text-red-600 inline-flex items-center mt-3 pt-6">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <ul class="space-y-4 bg-red-600 heading">
+        <li>
+            <div class=" h-1 bg-gradient-to-br from-fuchsia-500 to-purple-600"></div>
+        </li>
+    </ul> -->
+
+    <section class="text-gray-400 bg-white-900 body-font">
+        <div class="container px-5 py-24 mx-auto about-us">
+
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border"
+                            src="./img/university.png">
+                        <div class="flex-grow">
+                            <h2 class="text-black  hover:text-red-800 title-font font-semibold text-xl text-center">2021
+                            </h2>
+                            <p class="text-white-600 text-black  text-center text-base">Our Founding Year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border"
+                            src="./img/education.png">
+                        <div class="flex-grow">
+                            <h2 class="text-black  hover:text-red-800 title-font font-semibold  text-xl text-center">15
+                            </h2>
+                            <p class="text-white-600 text-black  text-center text-base">Average classes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border"
+                            src="./img/teacher.png">
+                        <div class="flex-grow">
+                            <h2 class="text-black  hover:text-red-800 title-font font-semibold  text-xl text-center">
+                                100%
+                            </h2>
+                            <p class="text-white-600 text-black  text-center text-base">Certified Teachers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border"
+                            src="./img/mortarboard.png">
+                        <div class="flex-grow">
+                            <h2 class="text-black  hover:text-red-800 title-font font-semibold  text-xl text-center">
+                                100%
+                            </h2>
+                            <p class="text-white-600 text-black  text-center text-base">University Acceptance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border"
+                            src="./img/presentation.png">
+                        <div class="flex-grow">
+                            <h2 class="text-black  hover:text-red-800 title-font font-semibold  text-xl text-center">8:1
+                            </h2>
+                            <p class="text-white-600 text-black  text-center text-base">Student To faculty Ratio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border"
+                            src="./img/search.png">
+                        <div class="flex-grow">
+                            <h2 class="text-black  hover:text-red-800 title-font font-semibold  text-xl text-center">
+                                Full- Time</h2>
+                            <p class="text-white-600 text-black  text-center text-base">Guidance Counselling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border"
+                            src="./img/bus.png">
+                        <div class="flex-grow">
+                            <h2 class="text-black  hover:text-red-800 title-font font-semibold  text-xl text-center">30
+                                Minutes</h2>
+                            <p class="text-white-600 text-black  text-center text-base">to Torranto Downtown</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 border"
+                            src="./img/badge.png">
+                        <div class="flex-grow">
+                            <h2 class="text-black  hover:text-red-800 title-font font-semibold  text-xl text-center">
+                                200+
+                            </h2>
+                            <p class="text-white-600 text-black text-center text-base">Medals in Athletics</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                            <div class="h-full flex items-center border-white-600 border p-4 rounded-lg">
+                                <img alt="team"
+                                    class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                                    src="https://dummyimage.com/108x98">
+                                <div class="flex-grow">
+                                    <h2 class="text-white title-font font-medium">Rodrigo Monchi</h2>
+                                    <p class="text-gray-600">Product Manager</p>
+                                </div>
+                            </div>
+                        </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="text-gray-600 body-font bg-gray-900">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center school-blog">
+
+            <div class="lg:max-w-sm lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <h3 class="text-2xl py-6  text-white font-black heading">School Videos</h3>
+                <ul class="space-y-4 bg-red-600 heading">
+                    <li>
+                        <div class=" h-1 bg-gradient-to-br from-fuchsia-500 to-purple-600 mb-5 "></div>
+                    </li>
+                </ul>
+                <img class="object-cover object-center rounded heading" alt="hero"
+                    src="./img/ben-white-83tkHLPgg2Q-unsplash.jpg">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-16 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-2xl text-2xl mb-4  text-white font-black -mt-1 py-2 heading2 ">School News
+                    & Updates
+
+                </h1>
+                <ul class="space-y-4 bg-red-600 news-border h-1">
+                    <li>
+                        <div class=" h-1 bg-gradient-to-br from-fuchsia-500 to-purple-600 mb-5 pt-5"></div>
+                    </li>
+                </ul>
+                <div class="p-2 lg:w-2/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600  -ml-1 mt-6">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="./img/badge.png">
+                        <div class="flex-grow">
+                            <h2 class="text-white text-white-500 title-font font-medium  text-medium text-left blog">17
+                                FEBRUARY 2021
+                            </h2>
+                            <p class="text-white-800 text-white hover:text-red-800  text-left text-lg font-bold">How to
+                                Make Online Education Effective for Students</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-2/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-white-600  -ml-1 mt-2">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="./img/badge.png">
+                        <div class="flex-grow">
+                            <h2 class="text-white text-white-500 title-font font-medium  text-medium text-left blog">10
+                                FEBRUARY 2021
+                            </h2>
+                            <p class="text-white-800 text-white hover:text-red-800  text-left text-lg font-bold">The
+                                benefits of extracurricular activities for students</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+
+                    <a href="#"
+                        class="text-red-600 inline-flex items-center font-bold text-base mt-4 pt-0 ml-2 blog-btn">Read
+                        The Blog
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="text-white-600 body-font bg-white-900 pt-16 pb-16">
+        <div class="container mx-auto flex px-5 py-15 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded " alt="hero" src="./img/DSC00534.JPG">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font  text-black sm:text-4xl text-3xl mb-4 font-black tracking-wide text-black-700">
+                    Apply for Admission </h1>
+                <p class="hidden lg:inline-block font-semibold text-xl text-black-500 text-black">New Term Applications
+                    Are Now Open. </p>
+
+                <p class="mb-8 mt-5 leading-relaxed text-base tracking-wide text-black">We don’t just give students an
+                    education and experiences that set them up for success in a career. We help them to discover a field
+                    they’re passionate about and dare to lead it.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 text-lg">Apply
+                        Now</button>
+                    <!-- <button
+                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-10 mx-auto">
+            <h3 class="text-2xl  pb-5 text-black-900 text-black font-black">Nile Academy Events</h3>
+            <ul class="space-y-4 bg-red-600">
+                <li>
+                    <div class=" h-1 bg-gradient-to-br from-fuchsia-500 to-purple-600 mb-5"></div>
+                </li>
+            </ul>
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 event-div">
+                    <div class="h-full">
+                        <!-- <img alt="testimonial"
+                            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                            src="https://dummyimage.com/302x302"> -->
+                        <h3 class="w-10 text-red-700 text-3xl pr-10 font-bold p-10">21 <span
+                                class="block text-gray-800 text-gray font-medium text-base">JAN</span></h3>
+                        <h3 class="font-black text-xl inline-flex w-90 ml-16 relative -top-32 pt-8 event text-black-900 text-black">Grade 12
+                            Graduation <br>Ceremony</h3>
+                        <!-- <p class="leading-relaxed"></p> -->
+                        <span class="inline-block h-1 w-10 rounded bg-red-500 bottom-border"></span>
+                        <i class="far fa-clock clock-icon font-black text-red-600 text-base"> 8:00 am -5:00 pm</i>
+                        <a href="#"> <i class="fas fa-map-marker-alt font-black text-red-600 text-base location-icon">
+                                SosudaNile Academy</i></a>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 event-div">
+                    <div class="h-full">
+                        <!-- <img alt="testimonial"
+                            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                            src="https://dummyimage.com/302x302"> -->
+                        <h3 class="w-10 text-red-700 text-3xl pr-10 font-bold p-10">10 <span
+                                class="block text-gray-800 text-gray font-medium text-base">FEB</span></h3>
+                        <h3 class="font-black text-xl inline-flex w-90 ml-16 relative -top-32 pt-8 events text-black-900 text-black">High School
+                            Exams </h3>
+                        <!-- <p class="leading-relaxed"></p> -->
+                        <span class="inline-block h-1 w-10 rounded bg-red-500 bottom-border2"></span>
+                        <i class="far fa-clock clock font-black text-red-600 text-base"> 12:00 pm -5:00 pm</i>
+                        <a href="#"> <i class="fas fa-map-marker-alt font-black text-red-600 text-base location">
+                                SosudaNile Academy</i></a>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 lg:mb-0 p-4">
+                    <div class="h-full">
+                        <!-- <img alt="testimonial"
+                            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                            src="https://dummyimage.com/302x302"> -->
+                        <h3 class="w-10 text-red-700 text-3xl pr-10 font-bold p-10">19 <span
+                                class="block text-gray-800 text-gray font-medium text-base">MAR</span></h3>
+                        <h3 class="font-black text-xl inline-flex w-90 ml-16 relative -top-32 pt-8 events text-black-900 text-black">Elementary
+                            School First Report Card</h3>
+                        <!-- <p class="leading-relaxed"></p> -->
+                        <span class="inline-block h-1 w-10 rounded bg-red-500 bottom-border"></span>
+                        <i class="far fa-clock clocks font-black text-red-600 text-base"> 12:00 pm -3:00 pm</i>
+                        <a href="#"> <i class="fas fa-map-marker-alt font-black text-red-600 text-base locations">
+                                SosudaNile Academy</i></a>
+                    </div>
+                </div>
+                <a href="#" class="text-red-600 inline-flex items-center font-bold text-base -mt-14 pt-0 ml-6"> More
+                    Events
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="text-gray-600 body-font bg-gray-900">
+        <div class="container px-5 py-20 mx-auto">
+            <h1 class="text-4xl title-font text-white-900 mb-12 text-center text-white font-black  tracking-wide">WHAT
+                OTHERS HAVE TO SAY...</h1>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6 text-justify">I have been a student at SosudaNile Academy since
+                            grade 5 when I first came to Canada. It has always been a very welcoming and inclusive
+                            environment and I always feel like a part of this community. The teachers are very
+                            supportive and are available around the clock to help with student needs. Thank you to all
+                            my friends, teachers, and mentors for being with me throughout a great school experience.
+                        </p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="./img/johm-kan-71NgiXcdTzE-unsplash.jpg"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-black text-gray-900 text-medium">YUSUF, CLASS OF
+                                    2020</span>
+                                <span class="text-gray-500 text-base">Rotman Commerce | University of Toronto</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6 text-justify">The teachers at Nile Academy are the highlight of
+                            the school, they are attentive and student-oriented which made my experience here
+                            unforgettable. The teachers go as far as to offer after-school tutoring which vouches for
+                            their honesty and hard work. The staff and principal were also really nice making sure that
+                            the rules are followed and the classes are conducted as intended.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="./img/natasha-kasim-BqD0Id4qemc-unsplash.jpg"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-black text-gray-900 text-medium">EMRE, CLASS OF 2018</span>
+                                <span class="text-gray-500 text-base">Computer Engineering | University of
+                                    Toronto</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="text-gray-600 body-font">
+        <div
+            class="container px-5 py-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a
+                class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="./index.html">
+                <img class="footer-logo" src="./img/logo-removebg-preview.png">
+                <!-- <span class="ml-3 text-xl font-bold">SosudaNile Academy</span> -->
+            </a>
+                <p class="mt-2 ml-12 text-base text-black-500 text-black">100 TradeCenter, Suite G-700, Woburn, MA
+                    <br> 01801 United States of America</p>
+                <p class="mt-2 ml-12 text-base  text-black-500 text-black">Phone: +1 781-281-5649</p>
+                <p class="mt-2  ml-12 text-base  text-black-500 text-black">Email: info@sosudatech.com</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-2/4 md:w-2/2 w-full px-10">
+
+                    <h2 class="title-font font-black  text-black-900 text-black tracking-widest text-lg mb-3">Useful Links
+                    </h2>
+                    <ul class="space-y-4 bg-red-600">
+                        <li>
+                            <div class=" h-1 bg-gradient-to-br from-fuchsia-500 to-purple-600 mb-5"></div>
+                        </li>
+                    </ul>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a href="./support-us.html" class="text-black-900 text-black hover:text-red-800 leading-10 font-medium text-base">Support Us</a>
+                        </li>
+                        <li>
+                            <a href="./about-Us.html" class="text-black-900 text-black hover:text-red-800 leading-10 font-medium text-base">About Us</a>
+                        </li>
+                        <li>
+                            <a  href="./high-school.html" class="text-black-900 text-black hover:text-red-800 leading-10 font-medium text-base">High School</a>
+                        </li>
+                        <li>
+                            <a href="./elementry.html" class="text-black-900 text-black hover:text-red-800 leading-10 font-medium text-base">Elementary</a>
+                        </li>
+                        <li>
+                            <a
+                            href="./kindergarten.html" class="text-black-900 text-black hover:text-red-800 leading-10 font-medium text-base">Kindergarten</a>
+                        </li>
+                        <li>
+                            <a href="./night-school.html"  class="text-black-900 text-black hover:text-red-800 leading-10 font-medium text-base">Night
+                                School</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-2/4 md:w-2/2 w-full px-10">
+                    <h2 class="title-font font-black text-black-900 text-black tracking-widest text-lg mb-3">Recent Post
+                    </h2>
+                    <ul class="space-y-4 bg-red-600">
+                        <li>
+                            <div class=" h-1 bg-gradient-to-br from-fuchsia-500 to-purple-600 mb-5"></div>
+                        </li>
+                    </ul>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-black-900 text-black hover:text-red-800 leading-8 font-medium text-base">How to Make
+                                Online Education Effective for Students
+                                <p class="text-gray-500 leading-4 font-medium text-sm pb-4">28 FEBRUARY 2021
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black-900 text-black hover:text-red-800 leading-8 font-medium text-base">The benefits of
+                                extracurricular activities for students
+                                <p class="text-gray-500 leading-4 font-medium text-sm pb-4">20 FEBRUARY 2021
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-black-900 text-black hover:text-red-800 leading-8 font-medium text-base">How to Motivate
+                                a Child Who is Unmotivated
+                                <p class="text-gray-500 leading-4 font-medium text-sm pb-4">10 FEBRUARY 2021
+                                </p>
+                            </a>
+                        </li>
+
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="bg-gray-100 py-2">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 text-sm text-center sm:text-left">© Copyright All Right Reserved 2020,
+                    SosudaNile Academy | Designed & Powered By
+                    <a href="#" rel="noopener noreferrer" class="text-gray-600 ml-1 text-red-600 font-high"
+                        target="_blank">Sosudatech.com</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500 hover:text-red-600">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500 hover:text-red-600">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500 hover:text-red-600">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500 hover:text-red-600">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- .js files.. -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+
+    <!-- <script>
+        let hamburger = document.getElementById('hamburgerbtn');
+
+        let mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', function () {
+            mobileMenu.classList.toggle('active');
+        });
+    </script> -->
+</body>
+
+</html>
